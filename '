@@ -1,0 +1,11 @@
+from pint import UnitRegistry
+
+# generate units object
+units = UnitRegistry()
+
+# use units object to get meters, second, etc.
+meter = units.meter
+second = units.second
+
+# use meter and second units to create earth acceleration variable
+a = 9.8 * meter / second**2
